@@ -6,18 +6,14 @@
     <title>John Doe - Personal Webpage</title>
     <style>
         html, body {
-            min-height: 100%;
+            height: 100%;
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
         }
-        .wrapper {
-            min-height: 100%;
+        body {
             display: flex;
             flex-direction: column;
-        }
-        .content {
-            flex: 1;
         }
         header {
             background-color: #333;
@@ -26,9 +22,10 @@
             text-align: center;
         }
         section {
+            flex: 1;
             padding: 2rem;
         }
-        .inner-content {
+        .content {
             max-width: 800px;
             margin: auto;
             background-color: #fff;
@@ -55,55 +52,53 @@
 </head>
 <body>
 
-<div class="wrapper">
-    <header>
-        <h1>Welcome to John Doe's Personal Webpage</h1>
-    </header>
+<header>
+    <h1>Welcome to John Doe's Personal Webpage</h1>
+</header>
 
-    <section class="content">
-        <div class="inner-content">
-            <h2>About Me</h2>
-            <p>Hi, I'm John Doe, a passionate mathematician currently pursuing my Master's degree. My primary interests lie in cryptography, game theory, and mathematical modeling. I am currently working on my Master's thesis, focusing on the mathematical modeling of tumor invasion using partial differential equations (PDE) and game theory. I believe these fields offer incredible potential to solve real-world problems and make a positive impact.</p>
-            
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Master of Science in Mathematics</strong> - XYZ University (2023-Present)</li>
-                <li><strong>Bachelor of Science in Mathematics</strong> - ABC University (2019-2023)</li>
-            </ul>
+<section>
+    <div class="content">
+        <h2>About Me</h2>
+        <p>Hi, I'm John Doe, a passionate mathematician currently pursuing my Master's degree. My primary interests lie in cryptography, game theory, and mathematical modeling. I am currently working on my Master's thesis, focusing on the mathematical modeling of tumor invasion using partial differential equations (PDE) and game theory. I believe these fields offer incredible potential to solve real-world problems and make a positive impact.</p>
+        
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Master of Science in Mathematics</strong> - XYZ University (2023-Present)</li>
+            <li><strong>Bachelor of Science in Mathematics</strong> - ABC University (2019-2023)</li>
+        </ul>
 
-            <h2>Research Interests</h2>
-            <ul>
-                <li>Cryptography: Exploring secure communication methods to protect information.</li>
-                <li>Game Theory: Analyzing strategic interactions in competitive environments.</li>
-                <li>Mathematical Modeling: Developing models to simulate real-world phenomena, with a current focus on tumor invasion.</li>
-            </ul>
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Cryptography: Exploring secure communication methods to protect information.</li>
+            <li>Game Theory: Analyzing strategic interactions in competitive environments.</li>
+            <li>Mathematical Modeling: Developing models to simulate real-world phenomena, with a current focus on tumor invasion.</li>
+        </ul>
 
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Mathematical Modeling of Tumor Invasion</strong>: Using PDE and game theory to study tumor growth and invasion patterns.</li>
-                <li><strong>Cryptographic Protocols</strong>: Designing and analyzing secure protocols for data encryption and communication.</li>
-                <li><strong>Game Theory Applications</strong>: Applying game theory to economic and social scenarios to predict and optimize outcomes.</li>
-            </ul>
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Mathematical Modeling of Tumor Invasion</strong>: Using PDE and game theory to study tumor growth and invasion patterns.</li>
+            <li><strong>Cryptographic Protocols</strong>: Designing and analyzing secure protocols for data encryption and communication.</li>
+            <li><strong>Game Theory Applications</strong>: Applying game theory to economic and social scenarios to predict and optimize outcomes.</li>
+        </ul>
 
-            <h2>Skills</h2>
-            <ul>
-                <li>Mathematics: Advanced knowledge in cryptography, game theory, and mathematical modeling.</li>
-                <li>Programming: Proficient in Python, with experience in data analysis and algorithm development.</li>
-                <li>Research: Strong analytical and problem-solving skills, with the ability to conduct independent research.</li>
-            </ul>
+        <h2>Skills</h2>
+        <ul>
+            <li>Mathematics: Advanced knowledge in cryptography, game theory, and mathematical modeling.</li>
+            <li>Programming: Proficient in Python, with experience in data analysis and algorithm development.</li>
+            <li>Research: Strong analytical and problem-solving skills, with the ability to conduct independent research.</li>
+        </ul>
 
-            <h2>Hobbies & Interests</h2>
-            <p>Outside of my academic pursuits, I enjoy a variety of activities to relax and stay active. I love reading books on a wide range of topics, from fiction to non-fiction. Exercise is an essential part of my routine, and I often find myself going for evening runs or working out at the gym. Music is another passion of mine, and I enjoy exploring different genres and discovering new artists.</p>
+        <h2>Hobbies & Interests</h2>
+        <p>Outside of my academic pursuits, I enjoy a variety of activities to relax and stay active. I love reading books on a wide range of topics, from fiction to non-fiction. Exercise is an essential part of my routine, and I often find myself going for evening runs or working out at the gym. Music is another passion of mine, and I enjoy exploring different genres and discovering new artists.</p>
 
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch with me, feel free to reach out via email: <a href="mailto:john.doe@example.com">john.doe@example.com</a>. I'm always open to discussing new ideas, collaborations, or just having a friendly chat about mathematics and related fields.</p>
-        </div>
-    </section>
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch with me, feel free to reach out via email: <a href="mailto:john.doe@example.com">john.doe@example.com</a>. I'm always open to discussing new ideas, collaborations, or just having a friendly chat about mathematics and related fields.</p>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2024 John Doe. All rights reserved.</p>
-    </footer>
-</div>
+<footer>
+    <p>&copy; 2024 John Doe. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
